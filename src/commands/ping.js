@@ -1,9 +1,13 @@
 
 module.exports.run = (client, message, args, utils) => {
 
-    message.channel.send('pong, wow i am a smart bot.')
+    const timestamp = (message.editedTimestamp) ? message.editedTimestamp : message.createdTimestamp; // Check if edited
+    const latency = `\`\`\`ini\n[ ${Math.floor(msg.createdTimestamp - timestamp)}ms ]\`\`\``;
+    const apiLatency = `\`\`\`ini\n[ ${Math.round(message.client.ws.ping)}ms ]\`\`\``;
 
+    message.channel.send(`Ping: ${latency} n\Api: ${apiLatency}`)
 }
+
 
 
 module.exports.help = {
