@@ -9,7 +9,7 @@
   "author": "MDC",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.6.4",
+    "discord.js": "^12.5.1",
     "fs": "0.0.1-security"
   }
 }
